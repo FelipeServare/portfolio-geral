@@ -1,0 +1,7 @@
+o que eu fiz no projeto foi especificamente mudanças nas mecanicas, por exemplo:
+- movimento por click nos botões de movimento(ou segurar)
+- "tela" de start
+- "tela" de fim de jogo
+- niveis com dificuldade crescente
+
+porém ainda pode ter bugs, pois o trabalho foi de 1 a 2 semanas, então o jogo não está completo
