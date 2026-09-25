@@ -1,0 +1,24 @@
+--1
+select r.valor_venda-r.valor_compra as lucro, tr.nome_tipo_rocha
+from rocha r, tipo_rocha tr
+where r.cod_tipo_rocha = tr.cod_tipo_rocha and r.valor_venda - r.valor_compra >= 80;
+
+--2,4
+SELECT cr.nome_cor, qtds.COUNT as quantidade
+from (SELECT cod_cor, count(cod_cor) from rocha GROUP by cod_cor) qtds, cor cr
+where 
+	qtds.cod_cor = cr.cod_cor
+	and count = (SELECT MAX(qtd) from (
+      SELECT cod_cor, count(cod_cor) qtd from rocha GROUP by cod_cor));
+
+--3
+SELECT r.nome_rocha, r.valor_venda-r.valor_compra as lucro, tr.nome_tipo_rocha
+from rocha r, tipo_rocha tr
+WHERE r.cod_tipo_rocha = tr.cod_tipo_rocha
+order by r DESC
+limit 3;
+
+--5
+select cr.nome_cor, count(SELECT DISTINCT tr.nome_tipo_rocha from tipo_rocha tr)
+from cor cr, tipo_rocha tr
+where COUNT >=2;
