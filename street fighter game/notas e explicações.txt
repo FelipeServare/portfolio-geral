@@ -1,0 +1,10 @@
+o trabalho feito foi que fiz mudanças no codigo original dado no trabalho da faculdade, como:
+
+- bugfix de quando o hadouken saia da tela e o jogador andava nos primeiros frames do golpe, ativava outra vez o golpe.
+- adição de tela cheia
+- bugfix de cancelamento de input com os botões de andar para esquerda e direita
+- bugfix de velocidade na tela cheia
+- adição de funcionalidade de agachar e pular
+- adição de golpes novos junto de golpes no ar.
+
+porém ainda pode ter bugs, pois o trabalho foi de 1 a 2 semanas, então o jogo não está completo
